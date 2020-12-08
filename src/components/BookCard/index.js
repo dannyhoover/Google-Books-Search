@@ -5,6 +5,12 @@ const BookCard = ({ id, title, description, authors, image, link, saved }) => {
         <a href="link">
           <h2>{title}</h2>
         </a>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h5>View</h5>
+        </a>
+        <a href="link">
+          <h5>Save</h5>
+        </a>
         <span>{authors.join()}</span>
         <p>{description ?? ""}</p>
         <img src={image} alt={title + " Cover Image"} />
